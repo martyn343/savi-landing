@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://savi-landing-xi.vercel.app"),
   title: "SAVI — Quietly impossible to ignore.",
   description:
     "A handcrafted cowhide wallet with a naturally unique pattern, slim profile and quiet visual presence. Request access to the SAVI First Edition.",
