@@ -756,6 +756,9 @@ function Footer() {
           </a>
           <a href="mailto:hello@savi.example" className="transition hover:text-black">
             Contact
+            <a href="/privacy" className="transition hover:text-black">
+  Privacy Policy
+</a>
           </a>
         </div>
       </div>
