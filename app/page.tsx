@@ -744,23 +744,23 @@ function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-x-8 gap-y-4 text-xs uppercase tracking-[0.24em] text-neutral-500">
-          <a href="#edition" className="transition hover:text-black">
-            First Edition
-          </a>
-          <a href="#story" className="transition hover:text-black">
-            Story
-          </a>
-          <a href="#request" className="transition hover:text-!white">
-            Request access
-          </a>
-          <a href="mailto:hello@savi.example" className="transition hover:text-black">
-            Contact
-            <a href="/privacy" className="transition hover:text-black">
-  Privacy Policy
-</a>
-          </a>
-        </div>
+        <div className="flex flex-wrap items-center justify-end gap-x-10 gap-y-4 text-xs uppercase tracking-[0.35em] text-neutral-500">
+  <a href="#edition" className="transition hover:text-black">
+    First Edition
+  </a>
+  <a href="#story" className="transition hover:text-black">
+    Story
+  </a>
+  <a href="#request" className="transition hover:text-black">
+    Request Access
+  </a>
+  <a href="mailto:sawickimartyn82@gmail.com" className="transition hover:text-black">
+    Contact
+  </a>
+  <a href="/privacy" className="transition hover:text-black">
+    Privacy Policy
+  </a>
+</div>
       </div>
     </footer>
   );
