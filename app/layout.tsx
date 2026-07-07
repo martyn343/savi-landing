@@ -40,6 +40,11 @@ export const metadata = {
       "A handcrafted cowhide wallet with a naturally unique pattern, slim profile and quiet visual presence.",
     images: ["/images/hero-campaign.png"],
   },
+    icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
