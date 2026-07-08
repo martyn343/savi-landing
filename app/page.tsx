@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 export default function Home() {
   return (
@@ -62,11 +62,15 @@ function Hero() {
       className="relative overflow-hidden border-b border-black/10"
     >
       <div className="absolute inset-0">
-        <img
-          src="/images/hero-campaign.png"
-          alt="SAVI cowhide wallet on black marble"
-          className="h-full w-full object-cover object-[62%_center]"
-        />
+        <Image
+  src="/images/hero-campaign.webp"
+  alt="SAVI cowhide wallet on black marble"
+  fill
+  priority
+  quality={85}
+  sizes="100vw"
+  className="object-cover object-[62%_center]"
+/>
 
         <div className="absolute inset-0 bg-black/5" />
 <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/5 to-black/15" />
