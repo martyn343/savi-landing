@@ -253,11 +253,11 @@ function Hero() {
 }function ProductGallery() {
   const images = [
     {
-      src: "/images/gallery-1.png",
+      src: "/images/gallery-1.webp",
       alt: "SAVI cowhide wallet front view",
     },
     {
-      src: "/images/gallery-2.png",
+      src: "/images/gallery-2.webp",
       alt: "SAVI cowhide wallet interior view",
     },
     {
@@ -380,7 +380,7 @@ function Hero() {
           <article className="group">
             <div className="aspect-[4/4.7] overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#1a1a1a]">
               <img
-                src="/images/material-detail.png"
+                src="/images/material-detail.webp"
                 alt="Natural cowhide texture detail"
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
               />
@@ -399,7 +399,7 @@ function Hero() {
           <article className="group">
             <div className="aspect-[4/4.7] overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#1a1a1a]">
               <img
-                src="/images/material-detail-2.png"
+                src="/images/material-detail-2.webp"
                 alt="Handcrafted edge and stitching detail"
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
               />
@@ -418,7 +418,7 @@ function Hero() {
           <article className="group">
             <div className="aspect-[4/4.7] overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#1a1a1a]">
               <img
-                src="/images/material-detail-3.png"
+                src="/images/material-detail-3.webp"
                 alt="One-of-one natural cowhide pattern detail"
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
               />
