@@ -543,7 +543,7 @@ function Hero() {
             <input
   type="hidden"
   name="redirect"
-  value="https://savi-landing-xi.vercel.app/thank-you"
+  value="https://saviofficial.com/thank-you"
 />
 
             <label className="block">
