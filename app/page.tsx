@@ -166,7 +166,7 @@ function Hero() {
         <div className="order-1 md:order-2">
           <div className="relative flex aspect-[4/3.3] items-center justify-center overflow-visible">
             <img
-              src="/images/hero-wallet.png"
+              src="/images/hero-wallet.webp"
               alt="SAVI handcrafted cowhide wallet"
               className="w-[105%] drop-shadow-[0_35px_45px_rgba(17,17,17,0.16)]"
             />
@@ -200,7 +200,7 @@ function Hero() {
     <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-10">
       <div className="flex items-end justify-center">
         <img
-          src="/images/wallet-side.png"
+          src="/images/wallet-side.webp"
           alt="SAVI wallet side profile"
           width={900}
           height={1200}
@@ -210,7 +210,7 @@ function Hero() {
 
       <div className="flex items-end justify-center md:pt-16">
         <img
-          src="/images/wallet-inside.png"
+          src="/images/wallet-inside.webp"
           alt="SAVI wallet interior"
           width={1200}
           height={1200}
@@ -261,15 +261,15 @@ function Hero() {
       alt: "SAVI cowhide wallet interior view",
     },
     {
-      src: "/images/gallery-3.png",
+      src: "/images/gallery-3.webp",
       alt: "SAVI cowhide wallet slim profile",
     },
     {
-      src: "/images/gallery-4.png",
+      src: "/images/gallery-4.webp",
       alt: "SAVI cowhide wallet material detail",
     },
     {
-      src: "/images/gallery-5.png",
+      src: "/images/gallery-5.webp",
       alt: "SAVI First Edition packaging set",
     },
   ];
@@ -445,7 +445,7 @@ function Hero() {
         <div>
           <div className="overflow-hidden rounded-[1.75rem] border border-black/10 bg-[#f7f3ed]">
             <img
-              src="/images/packaging-certificate.png"
+              src="/images/packaging-certificate.webp"
               alt="SAVI packaging and certificate of uniqueness"
               className="h-full w-full object-cover"
             />
