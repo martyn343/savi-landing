@@ -69,9 +69,11 @@ export default function MetaPixelConsent() {
 
     loadMetaPixel();
 
-    if (pathname === "/thank-you") {
-      window.fbq?.("track", "Lead");
-    }
+   if (pathname === "/thank-you") {
+  setTimeout(() => {
+    window.fbq?.("track", "Lead");
+  }, 800);
+}
   }, [consent, pathname]);
 
   function acceptCookies() {
