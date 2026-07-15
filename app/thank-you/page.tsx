@@ -1,14 +1,6 @@
-import Script from "next/script";
 export default function ThankYouPage() {
   return (
     <main className="min-h-screen bg-[#f7f3ed] text-[#111111]">
-        <Script id="meta-lead-event" strategy="afterInteractive">
-  {`
-    if (window.fbq) {
-      window.fbq('track', 'Lead');
-    }
-  `}
-</Script>
       <header className="fixed left-0 top-0 z-50 w-full border-b border-black/10 bg-[#f7f3ed]/85 backdrop-blur-md">
         <div className="mx-auto flex h-[85px] max-w-7xl items-center justify-between px-6 md:px-10">
           <a
