@@ -99,20 +99,43 @@ export default function PrivacyPage() {
                 5. Tools we use
               </h2>
               <p>
-                We use Web3Forms to collect and store form submissions and send
-                email notifications. We use Vercel to host the website and
-                Vercel Analytics to understand basic website traffic and page
-                views.
-              </p>
-              <p className="mt-4">
-                These providers may process technical data necessary to operate
-                the website and form system.
-              </p>
+  We use Web3Forms to collect and store form submissions and send email
+  notifications. We use Vercel to host the website and Vercel Analytics to
+  understand basic website traffic and page views.
+</p>
+
+<p className="mt-4">
+  We may also use Meta Pixel to understand how visitors interact with the
+  website, measure waitlist conversions, build advertising audiences and improve
+  future marketing campaigns.
+</p>
+
+<p className="mt-4">
+  Meta Pixel may collect technical and usage information, such as page views,
+  browser information, device information and actions taken on the website. This
+  data may be processed by Meta according to Meta&apos;s own terms and privacy
+  policies.
+</p>
             </section>
 
             <section>
+                <section>
+  <h2 className="mb-4 text-2xl font-light tracking-[-0.03em] text-black">
+    6. Cookies and similar technologies
+  </h2>
+  <p>
+    This website may use cookies and similar technologies for analytics,
+    website performance and marketing measurement. Non-essential tracking
+    technologies, such as marketing pixels, may require your consent depending
+    on applicable law.
+  </p>
+  <p className="mt-4">
+    You can control cookies through your browser settings. Where a cookie
+    consent banner is shown, you can accept or reject non-essential tracking.
+  </p>
+</section>
               <h2 className="mb-4 text-2xl font-light tracking-[-0.03em] text-black">
-                6. How long we keep your data
+                7. How long we keep your data
               </h2>
               <p>
                 We keep waitlist data only for as long as necessary to manage
@@ -124,7 +147,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="mb-4 text-2xl font-light tracking-[-0.03em] text-black">
-                7. Your rights
+                8. Your rights
               </h2>
               <p>
                 Depending on applicable law, you may have the right to access,
@@ -147,7 +170,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="mb-4 text-2xl font-light tracking-[-0.03em] text-black">
-                8. Updates
+                9. Updates
               </h2>
               <p>
                 We may update this Privacy Policy as SAVI develops. The current
