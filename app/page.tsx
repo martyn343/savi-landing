@@ -368,6 +368,14 @@ function Hero() {
       src: "/images/lifestyle-seated.webp",
       alt: "SAVI wallet in a quiet luxury lifestyle setting",
     },
+    {
+  src: "/images/lifestyle-cafe-table.webp",
+  alt: "SAVI wallet in use at a cafe table",
+},
+{
+  src: "/images/lifestyle-getting-ready.webp",
+  alt: "SAVI wallet styled with essentials before going out",
+},
   ];
 
   return (
