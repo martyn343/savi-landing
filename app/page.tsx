@@ -97,7 +97,7 @@ function Hero() {
               href="#request"
               className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-xs uppercase tracking-[0.28em] text-black transition hover:bg-white/85"
             >
-              Request access
+              Join the waitlist
             </a>
 
             <a
@@ -545,7 +545,7 @@ function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-20">
         <div>
          <p className="mb-4 text-xs uppercase tracking-[0.24em] text-black/45">
-  First Edition access
+  Join for early access before public release.
 </p>
 
 <h2 className="text-4xl font-light tracking-[-0.04em] md:text-6xl">
@@ -708,7 +708,7 @@ function Hero() {
     {
       question: "When will SAVI First Edition be available?",
       answer:
-        "First Edition access will be offered to the waitlist before public release. Production will begin after the preorder window opens.",
+        "First Edition production will be prepared in limited quantities after demand is confirmed through the waitlist and preorder window.",
     },
     {
       question: "What is the expected price?",
