@@ -10,6 +10,7 @@ export default function Home() {
 <ProductReveal />
 <SlimProfile />
 <ProductGallery />
+<LifestyleGallery />
 <MaterialCraft />
 <PackagingCertificate />
 <WaitlistOffer />
@@ -252,27 +253,16 @@ function Hero() {
   );
 }function ProductGallery() {
   const images = [
-    {
-      src: "/images/gallery-1.webp",
-      alt: "SAVI cowhide wallet front view",
-    },
-    {
-      src: "/images/gallery-2.webp",
-      alt: "SAVI cowhide wallet interior view",
-    },
-    {
-      src: "/images/gallery-3.webp",
-      alt: "SAVI cowhide wallet slim profile",
-    },
-    {
-      src: "/images/gallery-4.webp",
-      alt: "SAVI cowhide wallet material detail",
-    },
-    {
-      src: "/images/gallery-5.webp",
-      alt: "SAVI First Edition packaging set",
-    },
-  ];
+  { src: "/images/gallery-1.webp", alt: "SAVI cowhide wallet front view" },
+  { src: "/images/gallery-3.webp", alt: "SAVI cowhide wallet slim profile" },
+  { src: "/images/gallery-4.webp", alt: "SAVI cowhide wallet material detail" },
+  { src: "/images/gallery-5.webp", alt: "SAVI First Edition packaging set" },
+
+  { src: "/images/product-back.webp", alt: "SAVI cowhide wallet back view" },
+  { src: "/images/product-back-open.webp", alt: "SAVI wallet opened back view" },
+  { src: "/images/product-open-cards-cash.webp", alt: "SAVI wallet with cards and cash" },
+  { src: "/images/product-open-coins.webp", alt: "SAVI wallet with coin pocket open" },
+];
 
   const [activeImage, setActiveImage] = useState(0);
 
@@ -348,6 +338,71 @@ function Hero() {
               </button>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}function LifestyleGallery() {
+  const images = [
+    {
+      src: "/images/lifestyle-hand.webp",
+      alt: "SAVI wallet held in hand",
+    },
+    {
+      src: "/images/lifestyle-pocket.webp",
+      alt: "SAVI wallet slipped into pocket",
+    },
+    {
+      src: "/images/lifestyle-front.webp",
+      alt: "SAVI wallet held as part of quiet luxury styling",
+    },
+    {
+      src: "/images/lifestyle-open.webp",
+      alt: "SAVI wallet opened in hands",
+    },
+    {
+      src: "/images/lifestyle-payment.webp",
+      alt: "SAVI wallet used during payment",
+    },
+    {
+      src: "/images/lifestyle-seated.webp",
+      alt: "SAVI wallet in a quiet luxury lifestyle setting",
+    },
+  ];
+
+  return (
+    <section className="bg-[#f7f3ed] px-6 py-24 text-[#111111] md:px-10">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 max-w-3xl">
+          <p className="mb-4 text-xs uppercase tracking-[0.24em] text-black/45">
+            In use
+          </p>
+
+          <h2 className="text-4xl font-light tracking-[-0.04em] md:text-6xl">
+            Made to be carried.
+          </h2>
+
+          <p className="mt-6 max-w-2xl text-base leading-7 text-black/60 md:text-lg">
+            SAVI is designed to live naturally in everyday moments — in hand,
+            in a pocket, at a table, and as part of a quiet luxury wardrobe.
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-3">
+          {images.map((image) => (
+            <div key={image.src}>
+              <div className="relative aspect-[4/5] overflow-hidden bg-black/5">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  quality={100}
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
