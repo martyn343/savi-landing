@@ -262,6 +262,8 @@ function Hero() {
   { src: "/images/product-back-open.webp", alt: "SAVI wallet opened back view" },
   { src: "/images/product-open-cards-cash.webp", alt: "SAVI wallet with cards and cash" },
   { src: "/images/product-open-coins.webp", alt: "SAVI wallet with coin pocket open" },
+  { src: "/images/lifestyle-cafe-table.webp", alt: "SAVI wallet in use at a cafe table"},
+{ src: "/images/lifestyle-getting-ready.webp", alt: "SAVI wallet styled with essentials before going out"},
 ];
 
   const [activeImage, setActiveImage] = useState(0);
@@ -368,14 +370,7 @@ function Hero() {
       src: "/images/lifestyle-seated.webp",
       alt: "SAVI wallet in a quiet luxury lifestyle setting",
     },
-    {
-  src: "/images/lifestyle-cafe-table.webp",
-  alt: "SAVI wallet in use at a cafe table",
-},
-{
-  src: "/images/lifestyle-getting-ready.webp",
-  alt: "SAVI wallet styled with essentials before going out",
-},
+    
   ];
 
   return (
