@@ -541,22 +541,18 @@ function Hero() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-20">
         <div>
-          <p className="mb-8 text-xs uppercase tracking-[0.45em] text-neutral-500">
-            First Edition
-          </p>
+         <p className="mb-4 text-xs uppercase tracking-[0.24em] text-black/45">
+  First Edition access
+</p>
 
-          <h2 className="max-w-3xl text-5xl font-light leading-[0.95] tracking-[-0.05em] md:text-7xl">
-            SAVI First Edition
-          </h2>
+<h2 className="text-4xl font-light tracking-[-0.04em] md:text-6xl">
+  Join the SAVI First Edition waitlist.
+</h2>
 
-          <p className="mt-8 text-3xl font-light tracking-[-0.04em]">
-            €149
-          </p>
-
-          <p className="mt-8 max-w-xl text-base leading-8 text-neutral-700 md:text-lg">
-            A handcrafted cowhide wallet with a naturally unique pattern, slim
-            profile and quiet visual presence.
-          </p>
+<p className="mt-6 max-w-xl text-base leading-7 text-black/60 md:text-lg">
+  Be contacted before the public release. No payment required. Planned launch
+  price: €149.
+</p>
 
           <div className="mt-10 space-y-4 border-t border-black/10 pt-7 text-sm leading-7 text-neutral-700">
             <p>Included with every First Edition piece:</p>
@@ -650,12 +646,10 @@ function Hero() {
               type="submit"
               className="mt-3 w-full rounded-full bg-black px-8 py-4 text-xs uppercase tracking-[0.28em] !text-white transition hover:bg-neutral-800"
             >
-              Request access
+              Join the waitlist
             </button>
-
-            <p className="text-center text-xs leading-6 text-neutral-500">
-              No payment required. First Edition access will be offered before
-              public release.
+             <p className="mt-4 text-center text-xs leading-5 text-black/45">
+  No payment required. We only use your email to contact you about SAVI First Edition.
             </p>
           </form>
         </div>
@@ -732,6 +726,16 @@ function Hero() {
       answer:
         "Yes. Each piece is made from natural cowhide leather with visible texture, hair and organic markings.",
     },
+    {
+  question: "What does the wallet include?",
+  answer:
+    "The wallet includes a slim bifold structure, 4 card slots, 2 cash compartments and a small coin pocket.",
+},
+{
+  question: "Is every wallet unique?",
+  answer:
+    "Yes. Each wallet is made from natural cowhide, so the black-and-white markings vary from piece to piece. No two natural markings are ever alike.",
+},
   ];
 
   return (
