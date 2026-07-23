@@ -6,13 +6,12 @@ export default function Home() {
     <main className="min-h-screen bg-[#f7f3ed] text-[#111111]">
 <Header />
 <Hero />
-<TrustStrip />
 <BrandIdea />
+<ProductReveal />
+<SlimProfile />
 <ProductGallery />
-<LifestyleGallery />
-<ProductDetails />
+<MaterialCraft />
 <PackagingCertificate />
-<WhyJoin />
 <WaitlistOffer />
 <OurStory />
 <FAQ />
@@ -20,7 +19,9 @@ export default function Home() {
 <Footer />
     </main>
   );
-}function Header() {
+}
+
+function Header() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-black/10 bg-[#f7f3ed]/85 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-10">
@@ -52,7 +53,9 @@ export default function Home() {
       </div>
     </header>
   );
-}function Hero() {
+}
+
+function Hero() {
   return (
     <section
       id="top"
@@ -107,26 +110,7 @@ export default function Home() {
       </div>
     </section>
   );
-}function TrustStrip() {
-  const items = [
-    "Handcrafted cowhide",
-    "Each pattern is unique",
-    "Planned price: €149",
-    "No payment required to join",
-  ];
-
-  return (
-    <section className="border-b border-black/10 bg-[#f7f3ed] px-6 py-6 md:px-10">
-      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 text-center text-xs uppercase tracking-[0.18em] text-black/70 md:grid-cols-4">
-        {items.map((item) => (
-          <div key={item} className="border-x border-black/10 px-3">
-            {item}
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-  }function BrandIdea() {
+}function BrandIdea() {
   return (
     <section
       id="edition"
@@ -269,215 +253,101 @@ export default function Home() {
 }function ProductGallery() {
   const images = [
     {
-      src: "/images/hero-campaign.webp",
-      title: "First impression",
-      description: "A slim handcrafted cowhide wallet with natural contrast.",
-    },
-    {
       src: "/images/gallery-1.webp",
-      title: "Natural texture",
-      description: "Visible hair-on cowhide with organic black-and-white markings.",
+      alt: "SAVI cowhide wallet front view",
     },
     {
-      src: "/images/product-back.webp",
-      title: "Back view",
-      description: "A clean rear view showing the natural cowhide surface.",
+      src: "/images/gallery-2.webp",
+      alt: "SAVI cowhide wallet interior view",
     },
     {
-      src: "/images/product-back-open.webp",
-      title: "Opened back",
-      description: "The natural pattern continues across the full opened form.",
+      src: "/images/gallery-3.webp",
+      alt: "SAVI cowhide wallet slim profile",
     },
     {
-      src: "/images/product-open-cards-cash.webp",
-      title: "Cards and cash",
-      description: "Designed for cards, cash and everyday essentials.",
+      src: "/images/gallery-4.webp",
+      alt: "SAVI cowhide wallet material detail",
     },
     {
-      src: "/images/product-open-coins.webp",
-      title: "Coin pocket",
-      description: "A small coin pocket adds practical everyday function.",
-    },
-    {
-      src: "/images/wallet-side.webp",
-      title: "Slim profile",
-      description: "A refined silhouette made for everyday carry.",
-    },
-    {
-      src: "/images/material-detail.webp",
-      title: "Material detail",
-      description: "Close-up texture, stitching and black leather edge trim.",
+      src: "/images/gallery-5.webp",
+      alt: "SAVI First Edition packaging set",
     },
   ];
 
-  return (
-    <section id="first-edition" className="bg-[#111111] px-6 py-24 text-white md:px-10">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-12 max-w-2xl">
-          <p className="mb-4 text-xs uppercase tracking-[0.24em] text-white/50">
-            Product proof
-          </p>
-          <h2 className="text-4xl font-light tracking-[-0.04em] md:text-6xl">
-            See the wallet from every angle.
-          </h2>
-          <p className="mt-6 text-base leading-7 text-white/65 md:text-lg">
-            SAVI is a new brand, so the product has to speak clearly. Explore the
-            exterior, interior, texture, slim profile and everyday functionality.
-          </p>
-        </div>
-
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          {images.map((image) => (
-            <article key={image.src} className="group">
-              <div className="relative aspect-[4/5] overflow-hidden bg-white/5">
-                <Image
-                  src={image.src}
-                  alt={image.title}
-                  fill
-                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
-                  className="object-cover transition duration-700 group-hover:scale-[1.03]"
-                />
-              </div>
-              <div className="mt-4">
-                <h3 className="text-sm uppercase tracking-[0.18em] text-white/80">
-                  {image.title}
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-white/50">
-                  {image.description}
-                </p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}function LifestyleGallery() {
-  const images = [
-    {
-      src: "/images/lifestyle-hand.webp",
-      title: "In hand",
-    },
-    {
-      src: "/images/lifestyle-pocket.webp",
-      title: "Slim enough for daily carry",
-    },
-    {
-      src: "/images/lifestyle-front.webp",
-      title: "A quiet statement",
-    },
-    {
-      src: "/images/lifestyle-open.webp",
-      title: "Functional interior",
-    },
-    {
-      src: "/images/lifestyle-payment.webp",
-      title: "In real use",
-    },
-    {
-      src: "/images/lifestyle-seated.webp",
-      title: "Quiet luxury styling",
-    },
-  ];
+  const [activeImage, setActiveImage] = useState(0);
 
   return (
-    <section className="bg-[#f7f3ed] px-6 py-24 text-[#111111] md:px-10">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-12 grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-          <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.24em] text-black/45">
-              In use
-            </p>
-            <h2 className="text-4xl font-light tracking-[-0.04em] md:text-6xl">
-              Made to be carried, not just displayed.
-            </h2>
-          </div>
-          <p className="max-w-xl text-base leading-7 text-black/60 md:text-lg">
-            The wallet is designed to feel refined in real life — held in hand,
-            slipped into a pocket, opened at a table, and carried as part of a
-            quiet luxury wardrobe.
-          </p>
-        </div>
-
-        <div className="grid gap-5 md:grid-cols-3">
-          {images.map((image, index) => (
-            <article
-              key={image.src}
-              className={index === 4 ? "md:col-span-2" : ""}
-            >
-              <div className="relative aspect-[4/5] overflow-hidden bg-black/5">
-                <Image
-                  src={image.src}
-                  alt={image.title}
-                  fill
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-              <p className="mt-3 text-xs uppercase tracking-[0.18em] text-black/50">
-                {image.title}
-              </p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}function ProductDetails() {
-  const details = [
-    {
-      title: "Slim bifold form",
-      text: "Designed to carry naturally without unnecessary bulk.",
-    },
-    {
-      title: "4 card slots",
-      text: "Enough for the essential cards you actually use.",
-    },
-    {
-      title: "2 cash compartments",
-      text: "Separate space for notes and everyday organisation.",
-    },
-    {
-      title: "Coin pocket",
-      text: "A small practical pocket for coins or tiny essentials.",
-    },
-    {
-      title: "Natural cowhide exterior",
-      text: "Every piece carries its own black-and-white markings.",
-    },
-    {
-      title: "Black leather trim",
-      text: "Finished with a clean contrasting edge for a refined silhouette.",
-    },
-  ];
-
-  return (
-    <section className="bg-[#111111] px-6 py-24 text-white md:px-10">
+    <section className="border-t border-black/10 bg-[#111111] px-6 py-12 text-[#f7f3ed] md:px-10">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12 max-w-2xl">
-          <p className="mb-4 text-xs uppercase tracking-[0.24em] text-white/45">
-            Details
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-8 text-xs uppercase tracking-[0.45em] text-[#b8afa4]">
+            Product gallery
           </p>
-          <h2 className="text-4xl font-light tracking-[-0.04em] md:text-6xl">
-            Distinct outside. Practical inside.
+
+          <h2 className="text-4xl font-light leading-[1.05] tracking-[-0.04em] md:text-6xl">
+            A closer look at the First Edition.
           </h2>
-          <p className="mt-6 text-base leading-7 text-white/60 md:text-lg">
-            SAVI is made to balance visual identity with everyday function —
-            a slim profile, card storage, cash space and a small coin pocket.
+
+          <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-[#d8d0c5] md:text-lg">
+            From its slim profile to its natural cowhide texture, every detail is
+            designed to feel refined, practical and impossible to repeat.
           </p>
         </div>
 
-        <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-3">
-          {details.map((item) => (
-            <div key={item.title} className="bg-[#111111] p-8">
-              <h3 className="text-sm uppercase tracking-[0.18em] text-white">
-                {item.title}
-              </h3>
-              <p className="mt-4 text-sm leading-6 text-white/55">
-                {item.text}
-              </p>
+        <div className="mx-auto mt-8 max-w-[820px]">
+          <div className="relative flex items-center justify-center">
+            <img
+              src={images[activeImage].src}
+              alt={images[activeImage].alt}
+              className="w-full max-w-[680px] rounded-[18px] object-contain"
+            />
+          </div>
+
+          <div className="mt-4 flex items-center justify-center gap-5">
+            <button
+              type="button"
+              onClick={() =>
+                setActiveImage((activeImage - 1 + images.length) % images.length)
+              }
+              className="text-xs uppercase tracking-[0.28em] text-[#d8d0c5]/60 transition hover:text-[#f7f3ed]"
+            >
+              Prev
+            </button>
+
+            <div className="text-[11px] uppercase tracking-[0.32em] text-[#d8d0c5]/50">
+              {String(activeImage + 1).padStart(2, "0")} /{" "}
+              {String(images.length).padStart(2, "0")}
             </div>
-          ))}
+
+            <button
+              type="button"
+              onClick={() => setActiveImage((activeImage + 1) % images.length)}
+              className="text-xs uppercase tracking-[0.28em] text-[#d8d0c5]/60 transition hover:text-[#f7f3ed]"
+            >
+              Next
+            </button>
+          </div>
+
+          <div className="mx-auto mt-8 grid max-w-[760px] grid-cols-5 gap-4">
+            {images.map((image, index) => (
+              <button
+                key={image.src}
+                type="button"
+                onClick={() => setActiveImage(index)}
+                className={`group overflow-hidden rounded-[12px] border transition ${
+                  activeImage === index
+                    ? "border-white/60 opacity-100"
+                    : "border-white/10 opacity-45 hover:border-white/30 hover:opacity-80"
+                }`}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="aspect-[4/3] h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                />
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -608,38 +478,6 @@ export default function Home() {
       </div>
     </section>
   );
-}function WhyJoin() {
-  const reasons = [
-    "Be notified before the public release",
-    "Get early access to the First Edition",
-    "No payment required to join",
-    "Planned price: €149",
-    "Limited first production",
-    "Each wallet has a naturally unique pattern",
-  ];
-
-  return (
-    <section className="bg-[#f7f3ed] px-6 py-20 text-[#111111] md:px-10">
-      <div className="mx-auto grid max-w-6xl gap-10 border-y border-black/10 py-16 md:grid-cols-[0.9fr_1.1fr] md:items-start">
-        <div>
-          <p className="mb-4 text-xs uppercase tracking-[0.24em] text-black/45">
-            First Edition
-          </p>
-          <h2 className="text-4xl font-light tracking-[-0.04em] md:text-5xl">
-            Why join the list?
-          </h2>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-2">
-          {reasons.map((reason) => (
-            <div key={reason} className="border border-black/10 p-5">
-              <p className="text-sm leading-6 text-black/70">{reason}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
 }function WaitlistOffer() {
   return (
     <section
@@ -648,18 +486,22 @@ export default function Home() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-20">
         <div>
-         <p className="mb-4 text-xs uppercase tracking-[0.24em] text-black/45">
-  Request access
-</p>
+          <p className="mb-8 text-xs uppercase tracking-[0.45em] text-neutral-500">
+            First Edition
+          </p>
 
-<h2 className="text-4xl font-light tracking-[-0.04em] md:text-6xl">
-  Join the SAVI First Edition waitlist.
-</h2>
+          <h2 className="max-w-3xl text-5xl font-light leading-[0.95] tracking-[-0.05em] md:text-7xl">
+            SAVI First Edition
+          </h2>
 
-<p className="mt-6 max-w-xl text-base leading-7 text-black/60 md:text-lg">
-  Leave your email to be contacted before the public release. No payment is
-  required to join. The planned launch price is €149.
-</p>
+          <p className="mt-8 text-3xl font-light tracking-[-0.04em]">
+            €149
+          </p>
+
+          <p className="mt-8 max-w-xl text-base leading-8 text-neutral-700 md:text-lg">
+            A handcrafted cowhide wallet with a naturally unique pattern, slim
+            profile and quiet visual presence.
+          </p>
 
           <div className="mt-10 space-y-4 border-t border-black/10 pt-7 text-sm leading-7 text-neutral-700">
             <p>Included with every First Edition piece:</p>
@@ -750,14 +592,11 @@ export default function Home() {
             </label>
 
             <button
-  type="submit"
-  className="mt-6 w-full bg-black px-6 py-4 text-sm uppercase tracking-[0.18em] !text-white transition hover:bg-black/85"
->
-  Join the waitlist
-</button>
-<p className="mt-4 text-center text-xs leading-5 text-black/45">
-  No payment required. We only use your email to contact you about SAVI First Edition.
-</p>
+              type="submit"
+              className="mt-3 w-full rounded-full bg-black px-8 py-4 text-xs uppercase tracking-[0.28em] !text-white transition hover:bg-neutral-800"
+            >
+              Request access
+            </button>
 
             <p className="text-center text-xs leading-6 text-neutral-500">
               No payment required. First Edition access will be offered before
@@ -838,37 +677,7 @@ export default function Home() {
       answer:
         "Yes. Each piece is made from natural cowhide leather with visible texture, hair and organic markings.",
     },
-  {
-    question: "Is payment required to join the waitlist?",
-    answer:
-      "No. Joining the SAVI First Edition waitlist is free. You only leave your email so we can contact you before the public release.",
-  },
-  {
-    question: "What is the planned price?",
-    answer:
-      "The planned launch price is €149. Final availability and launch details will be shared with selected waitlist members first.",
-  },
-  {
-    question: "Is every wallet unique?",
-    answer:
-      "Yes. Each wallet is made with natural cowhide, so the black-and-white markings vary from piece to piece. No two natural markings are ever alike.",
-  },
-  {
-    question: "What does First Edition mean?",
-    answer:
-      "First Edition refers to the first planned production release of SAVI. Waitlist members will be contacted before the public launch.",
-  },
-  {
-    question: "What does the wallet include?",
-    answer:
-      "The wallet includes a slim bifold structure, 4 card slots, 2 cash compartments and a small coin pocket.",
-  },
-  {
-    question: "Where will SAVI ship?",
-    answer:
-      "SAVI is planned for selected European markets. Shipping details will be confirmed before launch.",
-  },
-];
+  ];
 
   return (
     <section className="border-t border-black/10 bg-[#111111] px-6 py-14 text-[#f7f3ed] md:px-10">
@@ -926,7 +735,9 @@ export default function Home() {
       </div>
     </section>
   );
-}function Footer() {
+}
+
+function Footer() {
   return (
     <footer className="border-t border-black/10 px-6 py-10 md:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
